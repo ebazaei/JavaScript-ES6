@@ -1,19 +1,35 @@
 let divStage1 = document.getElementById('stage1');
-let divStage2 = document.getElementById('stage2');
+let stageFor = document.getElementById('stageFor');
+let stageForIn = document.getElementById('stageForIn');
+let stageForOf = document.getElementById('stageForOf');
 
 
 //ES6 - LOOP
-let loopArr = [1,2,3,9,5,'test',7];
-let loopObject = {a:1,b:2,c:3};
+let loopArr = [1,2,3,4,5,'test','x'];
+let loopObject = {Name:'Ahmad' ,city:'Shiraz' ,Country:'Iran' };
+var textArr = "";
+var textObj = "";
+var textFor = "";
 
-
-
-var res = "";
-for(i=0;i<loopArr.length;i++){
-    res = res + "  " + loopArr[i];
+//for of : Array
+for(let i of loopArr){
+    textArr = textArr + "  " + i;
 }
+stageForOf.innerHTML = textArr;
 
-divStage2.innerHTML = res;
+
+//for in : Onject
+for(let i in loopObject){
+    textObj += loopObject[i] + "  " ;
+}
+stageForIn.innerHTML = textObj;
+
+
+//for 
+for(i=0;i<loopArr.length;i++){
+    textFor = textFor + "  " + loopArr[i];
+}
+stageFor.innerHTML = textFor;
 
 
 
