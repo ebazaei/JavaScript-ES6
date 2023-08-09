@@ -1,9 +1,34 @@
+//DOM - LOOP
 let divStage1 = document.getElementById('stage1');
 let stageFor = document.getElementById('stageFor');
 let stageForIn = document.getElementById('stageForIn');
 let stageForOf = document.getElementById('stageForOf');
 
+//DOM - Function
+let es6Function = document.getElementById('es6Function');
+let oldFunction = document.getElementById('oldFunction');
 
+
+//Function
+//ES6 - Functions
+const es6Func = (num1,num2) => {
+    let sum = num1 + num2;
+    return sum;
+}
+es6Function.innerHTML = 'Total:' + oldFunc(12,10);
+
+//ES6 - Other examples
+
+
+//Old - Functions
+function oldFunc(num1,num2){
+    let result = num1 + num2;
+    return result;
+}
+oldFunction.innerHTML = 'Total:' + oldFunc(3,15);
+
+
+//Loop
 //ES6 - LOOP
 let loopArr = [1,2,3,4,5,'test','x'];
 let loopObject = {Name:'Ahmad' ,city:'Shiraz' ,Country:'Iran' };
