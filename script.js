@@ -20,7 +20,7 @@ es6Function.innerHTML = es6Func(12,10);
 //You can only omit the return keyword and the curly brackets if the function is a single statement. Because of this, it might be a good habit to always keep them:
 
 const x = (x, y) => { return x * y };
-es6Function.innerHTML = x(5, 6);
+es6Function.innerHTML =  x(5, 6);
 
 //ES6 - Other examples
  
@@ -35,7 +35,7 @@ function oldFunc(num1,num2){
     let result = num1 + num2;
     return result;
 }
-oldFunction.innerHTML = 'Total:' + oldFunc(3,15);
+oldFunction.innerHTML = oldFunc(3,15);
 
 
 //Loop
